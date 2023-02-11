@@ -14,10 +14,12 @@
 /* Colors */
 :root {
   --white: #FFFFFF;
-  --black: #080808;
-  --gray: #616161;
-  --transparentBlack: #212121f7;
-  --transparentDarkBlack: #080808f5;
+  --gray: #9E9E9E;
+  --lilac: #F7F6FE;
+  --green: #1F9254;
+  --light-green: #ebf9f1;
+  --orange: #CD6200;
+  --light-orange: #fef2e5;
 }
 
 
