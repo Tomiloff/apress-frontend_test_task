@@ -1,0 +1,51 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../all-fonts/OpenSansLight/OpenSansLight.eot');
+  src: url('../all-fonts/OpenSansLight/OpenSansLight.eot') format('embedded-opentype'),
+       url('../all-fonts/OpenSansLight/OpenSansLight.woff2') format('woff2'),
+       url('../all-fonts/OpenSansLight/OpenSansLight.woff') format('woff'),
+       url('../all-fonts/OpenSansLight/OpenSansLight.ttf') format('truetype'),
+       url('../all-fonts/OpenSansLight/OpenSansLight.svg#OpenSansLight') format('svg');
+}
+
+
+/* Colors */
+:root {
+  --white: #FFFFFF;
+  --black: #080808;
+  --gray: #616161;
+  --transparentBlack: #212121f7;
+  --transparentDarkBlack: #080808f5;
+}
+
+
+/* Global-css */
+body {
+  font-family: "OpenSansLight";
+  font-size: 18px;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0 20px;
+}
+
+h1 {
+  font-family: "PT-Serif_Italic";
+  font-weight: bold;
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+button {
+  cursor: pointer;
+}
