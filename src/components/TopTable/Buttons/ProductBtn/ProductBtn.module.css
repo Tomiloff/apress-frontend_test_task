@@ -1,0 +1,27 @@
+.itemProductBtn {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 8px 12px;
+  border-radius: 22px;
+}
+
+.itemProductBtn:hover {
+  background-color: var(--light-gray);
+  transition: 0.2s;
+}
+
+.wrapperImg,
+.imgProduct {
+  width: 32px;
+  height: 32px;
+}
+
+.wrapperImg {
+  margin-right: 8px;
+}
+
+.imgProduct {
+  object-fit: cover;
+  border-radius: 8px;
+}

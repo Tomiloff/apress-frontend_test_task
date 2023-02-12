@@ -1,0 +1,34 @@
+td {
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 16px 0;
+}
+
+.rowProduct {
+  border-bottom: 1px solid transparent;
+  font-weight: bold;
+}
+
+.rowProduct:hover {
+  transition: 0.2s;
+  border-color: var(--gray);
+}
+
+.indicatorYes {
+  background-color: var(--light-green);
+  color: var(--green);
+  display: inline-block;
+  border-radius: 22px;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+.indicatorNo {
+  background-color: var(--light-orange);
+  color: var(--orange);
+  display: inline-block;
+  border-radius: 22px;
+  padding: 8px 12px;
+  font-weight: bold;
+}

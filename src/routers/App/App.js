@@ -1,9 +1,9 @@
-import styles from './App.module.css'
+import TopTable from "../../pages/TopTable/TopTable";
+
 
 const App = () => {
   return (
-    <div className={styles.App}>
-    </div>
+    <TopTable />
   );
 }
 
