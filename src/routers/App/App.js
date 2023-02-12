@@ -1,4 +1,4 @@
-import TopTable from "../../pages/TopTable/TopTable";
+import TopTable from "../../pages/TopTable/TopTableContainer";
 
 
 const App = () => {

@@ -2,15 +2,15 @@ import ProductBtn from "../../../../../components/TopTable/Buttons/ProductBtn/Pr
 import styles from "./Product.module.css";
 
 
-const Product = () => {
+const Product = ({name, createdAt, price, count}) => {
   return (
     <tr className={styles.rowProduct}>
       <td>
-        <ProductBtn />
+        <ProductBtn name={name} />
       </td>
-      <td>13/05/2022</td>
-      <td>₽4.95</td>
-      <td>1</td>
+      <td>{createdAt}</td>
+      <td>₽ {price}</td>
+      <td>{count}</td>
       <td>
         <p className={styles.indicatorYes}>Есть на складе</p>
       </td>
