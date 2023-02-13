@@ -1,14 +1,14 @@
 .itemProductBtn {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 20px;
   padding: 8px 12px;
   border-radius: 22px;
 }
 
 .itemProductBtn:hover {
   background-color: var(--light-gray);
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .wrapperImg,

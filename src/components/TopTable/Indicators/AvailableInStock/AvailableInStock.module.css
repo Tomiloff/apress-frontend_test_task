@@ -1,0 +1,8 @@
+.indicatorYes {
+  background-color: var(--light-green);
+  color: var(--green);
+  display: inline-block;
+  border-radius: 22px;
+  padding: 8px 12px;
+  font-weight: bold;
+}
