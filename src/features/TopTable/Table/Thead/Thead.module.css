@@ -21,3 +21,13 @@ th {
 .priceFilterBtn {
   margin-right: 8px;
 }
+
+
+/* Media queries */
+
+/* ========max-width: 800px ======== */
+@media only screen and (max-width: 800px) {
+  .thead {
+    display: none;
+  }
+}

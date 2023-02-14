@@ -4,7 +4,7 @@ import OutOfStock from "../../../../../components/TopTable/Indicators/OutOfStock
 import styles from "./Product.module.css";
 
 
-const Product = ({id, name, createdAt, price, count, imageUrl, description, url, openModal}) => {
+const Product = ({id, name, createdAt, price, count, imageUrl, openModal}) => {
 
   const transformDate = createdAt
             .replace("-", "/")

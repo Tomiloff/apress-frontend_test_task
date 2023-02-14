@@ -69,3 +69,13 @@ tbody tr:nth-child(2n) {
   padding: 8px 12px;
   font-weight: bold;
 }
+
+
+/* Media queries */
+
+/* ========max-width: 800px ======== */
+@media only screen and (max-width: 800px) {
+  tbody tr:nth-child(2n) {
+    background-color: var(--white);
+  }
+}

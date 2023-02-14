@@ -4,7 +4,7 @@ import arrowsIcon from "../../../../assets/all-images/icons/arrows.svg";
 
 const Thead = () => {
   return (
-    <thead>
+    <thead className={styles.thead}>
         <tr className={styles.topTableTitles}>
           <th>Имя товара</th>
           <th>
