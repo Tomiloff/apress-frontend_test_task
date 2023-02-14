@@ -1,0 +1,9 @@
+td {
+  width: 20%;
+  vertical-align: middle;
+  padding: 16px 0;
+}
+
+.rowProduct {
+  font-weight: bold;
+}

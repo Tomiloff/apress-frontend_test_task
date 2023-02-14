@@ -1,0 +1,38 @@
+.itemProductBtn {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  padding: 8px 12px;
+  border-radius: 22px;
+}
+
+.itemProductBtn:hover {
+  background-color: var(--light-gray);
+  transition: 0.1s;
+}
+
+.wrapperImg,
+.imgProduct {
+  width: 32px;
+  height: 32px;
+}
+
+.wrapperImg {
+  margin-right: 8px;
+}
+
+.imgProduct {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/* Media queries */
+
+/* ========max-width: 800px ======== */
+@media only screen and (max-width: 800px) {
+  .itemProductBtn {
+    width: 100%;
+    padding: 0px 12px;
+  }
+}
