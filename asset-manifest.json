@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/apress-frontend_test_task/static/css/main.5de2f0f2.css",
+    "main.js": "/apress-frontend_test_task/static/js/main.4be6732f.js",
+    "static/js/787.d0acb16e.chunk.js": "/apress-frontend_test_task/static/js/787.d0acb16e.chunk.js",
+    "static/media/OpenSansLight.svg": "/apress-frontend_test_task/static/media/OpenSansLight.bad748acc558e595ef2d.svg",
+    "static/media/OpenSansLight.eot": "/apress-frontend_test_task/static/media/OpenSansLight.3de599c4a5303d0d2994.eot",
+    "static/media/OpenSansLight.ttf": "/apress-frontend_test_task/static/media/OpenSansLight.41f7b8b699d52655fa10.ttf",
+    "static/media/OpenSansLight.woff": "/apress-frontend_test_task/static/media/OpenSansLight.9a2bd9b9bad290dd6d88.woff",
+    "static/media/OpenSansLight.woff2": "/apress-frontend_test_task/static/media/OpenSansLight.84193a98454b30db14d8.woff2",
+    "static/media/arrows.svg": "/apress-frontend_test_task/static/media/arrows.770fb6f93c8738aaab397219fbca3cd7.svg",
+    "static/media/search.svg": "/apress-frontend_test_task/static/media/search.3d4b827abeb5c064930fe9bb7e2c9b73.svg",
+    "index.html": "/apress-frontend_test_task/index.html",
+    "static/media/cross.svg": "/apress-frontend_test_task/static/media/cross.c1209fd3532aaf116e8aeb03fe7dd772.svg",
+    "main.5de2f0f2.css.map": "/apress-frontend_test_task/static/css/main.5de2f0f2.css.map",
+    "main.4be6732f.js.map": "/apress-frontend_test_task/static/js/main.4be6732f.js.map",
+    "787.d0acb16e.chunk.js.map": "/apress-frontend_test_task/static/js/787.d0acb16e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5de2f0f2.css",
+    "static/js/main.4be6732f.js"
+  ]
+}
