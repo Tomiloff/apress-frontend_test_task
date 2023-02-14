@@ -1,11 +1,11 @@
 import styles from "./ProductBtn.module.css";
 
 
-const ProductBtn = ({name}) => {
+const ProductBtn = ({id, name, imageUrl, openModal}) => {
   return (
-    <button className={styles.itemProductBtn}>
+    <button id={id} onClick={openModal} className={styles.itemProductBtn}>
       <figure className={styles.wrapperImg}>
-        <img src="https://loremflickr.com/640/480" alt="product" className={styles.imgProduct} />
+        <img src={imageUrl} alt="product" className={styles.imgProduct} />
       </figure>
       <p>{name}</p>
     </button>

@@ -1,44 +1,48 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import Header from "../../common/TopTable/Header/Header";
 import Table from "../../common/TopTable/Table/Table";
 import { requestProducts } from "../../stores/reducers/topTable-reducer";
-import styles from "./TopTable.module.css";
-import crossIcon from "../../assets/all-images/icons/cross.svg";
+import ModalWrapper from "../../features/TopTable/ModalWrapper/ModalWrapper";
+
+
+const html = document.querySelector("html");
+const body = document.querySelector("body");
 
 
 const TopTableContainer = ({topTable, requestProducts}) => {
 
+  const [hide, setHide] = useState(true);
+  const [dataForModal, setDataForModal] = useState({});
+
   useEffect(() => {
-    console.log("render-top-table");
     requestProducts();
   }, []);
 
-  const hideModal = () => {
+  const openModal = (e) => {
+    setHide(false);
 
+    const idProduct = e.target.closest("button").id;
+    const productForModal = topTable.products.find(({id}) => id === idProduct);
+    setDataForModal(productForModal);
+      
+    html.style.overflow = "hidden";
+    body.style.overflow = "hidden";
   };
+
+  const hideModal = () => {
+    setHide(true);
+
+    html.style.overflow = "visible";
+    body.style.overflow = "visible";
+  };
+  
  
   return (
     <>
       <Header />
-      <Table products={topTable.products} />
-      <div className={styles.modalWrapper}>
-        <div className={styles.modalProductCard}>
-          <div className={styles.modalProductControl}>
-            <button onClick={hideModal}>
-              <img src={crossIcon} alt="crossIcon" />
-            </button>
-          </div>
-          <h3 className={styles.modalProductTitle}>Hat</h3>
-          <div className={styles.modalImgWrapper}>
-            <img src="https://loremflickr.com/640/480" alt="imageProduct" className={styles.modalImg} />
-          </div>
-          <p className={styles.modalProductPrice}>₽4.95</p>
-          <p className={styles.modalProductDescription}>В определенные исторические эпохи у ряда народов шляпа, как и другие элементы одежды, выполняла социальную функцию идентификации, указывая на принадлежность ее хозяин...</p>
-          <p className={styles.modalProductCount}>Количество: 1</p>
-          <a href="#" className={styles.modalProductLink}>Ссылка на товар</a>
-        </div>
-      </div>
+      <Table products={topTable.products} openModal={openModal} />
+      <ModalWrapper hide={hide} hideModal={hideModal} dataForModal={dataForModal} />
     </>
   )
 };
