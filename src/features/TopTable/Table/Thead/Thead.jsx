@@ -9,13 +9,13 @@ const Thead = () => {
           <th>Имя товара</th>
           <th>
             <button className={styles.dateFilterBtn}>
-              <img src={arrowsIcon} alt="Arrows" />
+              <img src={arrowsIcon} alt="sort button" />
             </button>
             Дата создания
           </th>
           <th>
             <button className={styles.priceFilterBtn}>
-              <img src={arrowsIcon} alt="Arrows" />
+              <img src={arrowsIcon} alt="sort button" />
             </button>
             Цена
           </th>

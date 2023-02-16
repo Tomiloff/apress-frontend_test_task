@@ -2,17 +2,10 @@ import ProductBtn from "../../../../components/TopTable/Buttons/ProductBtn/Produ
 import AvailableInStock from "../../../../components/TopTable/Indicators/AvailableInStock/AvailableInStock";
 import OutOfStock from "../../../../components/TopTable/Indicators/OutOfStock/OutOfStock";
 import styles from "./MobileTbody.module.css";
+import { dateConverter } from "../../../../utils/dateConverter/dateConverter";
 
 
 const MobileTbody = ({id, name, price, imageUrl, createdAt, count, openModal}) => {
-
-  const transformDate = createdAt
-            .replace("-", "/")
-            .replace("-", "/")
-            .slice(0, 10)
-            .split("/")
-            .reverse()
-            .join("/");
 
   return (
     <tbody className={styles.cardProduct}>
@@ -24,7 +17,7 @@ const MobileTbody = ({id, name, price, imageUrl, createdAt, count, openModal}) =
       </tr>
       <tr>
         <td>Дата создания</td>
-        <td>{transformDate}</td>
+        <td>{dateConverter(createdAt)}</td>
       </tr>
       <tr>
         <td>Цена</td>
@@ -36,7 +29,7 @@ const MobileTbody = ({id, name, price, imageUrl, createdAt, count, openModal}) =
       </tr>
       <tr>
         <td>Наличие</td>
-        <td>{Number(count) > 0 ? <AvailableInStock /> : <OutOfStock />}</td>
+        <td>{Number(count) ? <AvailableInStock /> : <OutOfStock />}</td>
       </tr>
     </tbody>
   )

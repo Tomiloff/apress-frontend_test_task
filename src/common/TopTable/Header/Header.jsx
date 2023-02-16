@@ -10,7 +10,7 @@ const Header = () => {
         <Form className={styles.searchForm}>
           <Field name="search" placeholder="Фильтр по названию товара" type="search" className={styles.searchInput} />
           <button>
-            <img src={searchIcon} alt="search" className={styles.searchIcon} />
+            <img src={searchIcon} alt="search icon" className={styles.searchIcon} />
           </button>
         </Form>
       </Formik>
