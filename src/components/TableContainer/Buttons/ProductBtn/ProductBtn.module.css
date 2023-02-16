@@ -1,0 +1,37 @@
+.product_btn {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  padding: 8px 12px;
+  border-radius: 22px;
+}
+
+.product_btn:hover {
+  background-color: var(--light-gray);
+  transition: 0.1s;
+}
+
+.product_btn_wrapper,
+.product_btn_img {
+  width: 32px;
+  height: 32px;
+}
+
+.product_btn_wrapper {
+  margin-right: 8px;
+}
+
+.product_btn_img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/* Media queries */
+
+/* ========max-width: 800px ======== */
+@media only screen and (max-width: 800px) {
+  .product_btn {
+    width: 100%;
+  }
+}

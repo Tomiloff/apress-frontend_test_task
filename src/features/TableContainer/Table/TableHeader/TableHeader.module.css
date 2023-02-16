@@ -1,0 +1,35 @@
+.table_header {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  z-index: 1;
+}
+
+.table_header_titles {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header_titles_name {
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 16px 0;
+}
+
+.titles_btn_sort {
+  margin-right: 8px;
+}
+
+
+/* Media queries */
+
+/* ========max-width: 800px ======== */
+@media only screen and (max-width: 800px) {
+  .table_header {
+    display: none;
+  }
+}

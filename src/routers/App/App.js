@@ -1,9 +1,9 @@
-import TopTable from "../../pages/TopTable/TopTableContainer";
+import TableContainer from "../../pages/TableContainer/TableContainer";
 
 
 const App = () => {
   return (
-    <TopTable />
+    <TableContainer />
   );
 }
 

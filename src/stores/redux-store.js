@@ -1,10 +1,10 @@
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
-import topTableReducer from "./reducers/topTable-reducer";
+import tableContainerReducer from "./reducers/tableContainer-reducer";
 import thunkMiddleware from "redux-thunk";
 
 
 const reducers = combineReducers({
-  topTable: topTableReducer
+  topTable: tableContainerReducer
 });
 
 

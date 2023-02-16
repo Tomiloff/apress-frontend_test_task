@@ -1,0 +1,10 @@
+.table {
+  width: 100%;
+}
+
+.table td {
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 16px 0;
+}
