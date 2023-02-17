@@ -5,13 +5,13 @@ import styles from "./MobileTbody.module.css";
 import { dateConverter } from "../../../../utils/dateConverter/dateConverter";
 
 
-const MobileTbody = ({id, name, price, imageUrl, createdAt, count, openModal}) => {
+const MobileTbody = ({name, price, imageUrl, createdAt, count, openModal}) => {
 
   return (
     <tbody className={styles.cardProduct}>
       <tr>
         <td>
-          <ProductBtn id={id} name={name} imageUrl={imageUrl} openModal={openModal} />
+          <ProductBtn name={name} imageUrl={imageUrl} openModal={openModal} />
         </td>
         <td></td>
       </tr>

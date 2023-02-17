@@ -5,9 +5,7 @@ const ModalProductContent = ({dataForModal}) => {
   return (
     <>
       <h3 className={styles.modal_product_title}>{dataForModal.name}</h3>
-      <div className={styles.modal_wrapper_img}>
-        <img src={dataForModal.imageUrl} alt="imageProduct" className={styles.modal_img} />
-      </div>
+      <img src={dataForModal.imageUrl} alt="imageProduct" className={styles.modal_product_img} />
       <p className={styles.modal_product_price}>₽ {dataForModal.price}</p>
       <p className={styles.modal_product_description}>{dataForModal.description}</p>
       <p className={styles.modal_product_count}>Количество: {dataForModal.count}</p>

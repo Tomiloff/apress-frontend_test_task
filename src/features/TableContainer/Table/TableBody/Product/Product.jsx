@@ -5,12 +5,12 @@ import styles from "./Product.module.css";
 import { dateConverter } from "../../../../../utils/dateConverter/dateConverter";
 
 
-const Product = ({id, name, createdAt, price, count, imageUrl, openModal}) => {
+const Product = ({name, createdAt, price, count, imageUrl, openModal}) => {
   
   return (
     <tr className={styles.table_row}>
       <td className={styles.table_cell}>
-        <ProductBtn id={id} name={name} imageUrl={imageUrl} openModal={openModal} />
+        <ProductBtn name={name} imageUrl={imageUrl} openModal={openModal} />
       </td>
       <td className={styles.table_cell}>{dateConverter(createdAt)}</td>
       <td className={styles.table_cell}>₽ {price}</td>

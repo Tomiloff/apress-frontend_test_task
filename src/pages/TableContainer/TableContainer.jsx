@@ -19,11 +19,10 @@ const TableContainer = ({topTable, requestProducts}) => {
     requestProducts();
   }, []);
 
-  const openModal = (e) => {
+  const openModal = (nameProduct) => {
     setHide(false);
 
-    const idProduct = e.target.closest("button").id;
-    const productForModal = topTable.products.find(({id}) => id === idProduct);
+    const productForModal = topTable.products.find(({name}) => name === nameProduct);
     setDataForModal(productForModal);
       
     html.style.overflow = "hidden";
