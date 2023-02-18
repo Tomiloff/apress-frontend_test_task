@@ -1,21 +1,23 @@
 import styles from "./Table.module.css"
-import Thead from "../../../features/TopTable/Table/Thead/Thead";
-import Tbody from "../../../features/TopTable/Table/Tbody/Tbody";
-import MobileTbody from "../../../features/TopTable/Table/MobileTbody/MobileTbody";
+import TableHeader from "../../../features/TopTable/Table/TableHeader/TableHeader";
+import MobileTableBody from "../../../features/TopTable/Table/MobileTableBody/MobileTableBody";
+import DesktopTableBody from "../../../features/TopTable/Table/DesktopTableBody/DesktopTableBody";
 
 
-const Table = ({products, openModal}) => {
+const Table = ({products, openModal, pageWidth}) => {
+
   return (
-    <table className={styles.topTable}>
-      <Thead />
-      <Tbody products={products} openModal={openModal} />
-      
-      {products.map( ({id, name, createdAt, price, count, description, imageUrl, url}) => {
+    <table className={styles.table}>
+      <TableHeader />
+
+      {pageWidth >= 800 ? 
+      <DesktopTableBody products={products} openModal={openModal} />
+      : products.map( ({id, name, createdAt, price, count, description, imageUrl, url}) => {
         return(
-          <MobileTbody key={id} id={id} name={name} createdAt={createdAt} price={price} count={count} description={description} imageUrl={imageUrl} url={url} openModal={openModal} />
+          <MobileTableBody key={id} name={name} createdAt={createdAt} price={price} count={count} description={description} imageUrl={imageUrl} url={url} openModal={openModal} />
         )
-      })}
-      
+      })
+      }
     </table>
   )
 };

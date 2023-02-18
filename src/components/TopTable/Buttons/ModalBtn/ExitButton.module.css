@@ -1,5 +1,8 @@
-.modalProductControl {
-  width: 100%;
-  text-align: right;
-  margin-bottom: 5px;
+.modal_product_btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-image: url("../../../../assets/all-images/icons/cross.svg");
+  width: 20px; 
+  height: 20px;
 }

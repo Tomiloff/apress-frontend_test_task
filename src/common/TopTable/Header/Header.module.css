@@ -5,14 +5,14 @@
   right: 0;
   background-color: var(--white);
   padding: 20px 20px 10px 20px;
-  z-index: 1000;
+  z-index: 1;
 }
 
-.searchForm {
+.header_search {
   position: relative;
 }
 
-.searchInput {
+.search_input {
   width: 100%;
   border: 1px solid var(--gray);
   border-radius: 10px;
@@ -21,7 +21,7 @@
   font-size: 15px;
 }
 
-.searchIcon {
+.search_input_icon {
   position: absolute;
   top: 13px;
   right: 20px;
@@ -32,12 +32,12 @@
 
 /* ========max-width: 800px ======== */
 @media only screen and (max-width: 800px) {
-  .searchInput {
+  .search_input {
     padding: 5px 20px;
     font-size: 14px;
   }
 
-  .searchIcon {
+  .search_input_icon {
     top: 5px;
     right: 15px;
   }

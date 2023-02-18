@@ -1,0 +1,16 @@
+.mobile_table_cell {
+  width: 20%;
+  vertical-align: middle;
+  padding: 16px 0;
+}
+
+.mobile_table {
+  font-weight: bold;
+}
+
+.mobile_table tr:first-child {
+  background-color: var(--lilac);
+}
+.mobile_table tr:nth-child(n+2) {
+  border-bottom: 1px solid var(--light-gray);
+}

@@ -7,10 +7,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Formik initialValues={{search: ""}}>
-        <Form className={styles.searchForm}>
-          <Field name="search" placeholder="Фильтр по названию товара" type="search" className={styles.searchInput} />
+        <Form className={styles.header_search}>
+          <Field name="search" placeholder="Фильтр по названию товара" type="search" className={styles.search_input} />
           <button>
-            <img src={searchIcon} alt="search" className={styles.searchIcon} />
+            <img src={searchIcon} alt="search icon" className={styles.search_input_icon} />
           </button>
         </Form>
       </Formik>

@@ -3,7 +3,7 @@ import styles from "./AvailableInStock.module.css";
 
 const AvailableInStock = () => {
   return (
-    <p className={styles.indicatorYes}>Есть на складе</p>
+    <span className={styles.indicator_yes}>Есть на складе</span>
   )
 };
 

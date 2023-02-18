@@ -3,7 +3,7 @@ import styles from "./OutOfStock.module.css";
 
 const OutOfStock = () => {
   return (
-    <p className={styles.indicatorNo}>Отсутствует</p>
+    <span className={styles.indicator_no}>Отсутствует</span>
   )
 };
 

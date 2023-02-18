@@ -1,4 +1,4 @@
-.itemProductBtn {
+.product_btn {
   display: flex;
   align-items: center;
   margin: 0 20px;
@@ -6,22 +6,22 @@
   border-radius: 22px;
 }
 
-.itemProductBtn:hover {
+.product_btn:hover {
   background-color: var(--light-gray);
   transition: 0.1s;
 }
 
-.wrapperImg,
-.imgProduct {
+.product_btn_wrapper,
+.product_btn_img {
   width: 32px;
   height: 32px;
 }
 
-.wrapperImg {
+.product_btn_wrapper {
   margin-right: 8px;
 }
 
-.imgProduct {
+.product_btn_img {
   object-fit: cover;
   border-radius: 8px;
 }
@@ -31,8 +31,7 @@
 
 /* ========max-width: 800px ======== */
 @media only screen and (max-width: 800px) {
-  .itemProductBtn {
+  .product_btn {
     width: 100%;
-    padding: 0px 12px;
   }
 }

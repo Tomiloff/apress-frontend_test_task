@@ -1,24 +1,26 @@
-th {
+.table_header {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  z-index: 1;
+}
+
+.table_header_titles {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header_titles_name {
   width: 20%;
   text-align: center;
   vertical-align: middle;
   padding: 16px 0;
 }
 
-.topTableTitles {
-  position: fixed;
-  top: 70px;
-  left: 0;
-  right: 0;
-  display: flex;
-  background-color: var(--white);
-  font-size: 18px;
-  font-weight: bold;
-  z-index: 1000;
-}
-
-.dateFilterBtn,
-.priceFilterBtn {
+.titles_btn_sort {
   margin-right: 8px;
 }
 
@@ -27,7 +29,7 @@ th {
 
 /* ========max-width: 800px ======== */
 @media only screen and (max-width: 800px) {
-  .thead {
+  .table_header {
     display: none;
   }
 }

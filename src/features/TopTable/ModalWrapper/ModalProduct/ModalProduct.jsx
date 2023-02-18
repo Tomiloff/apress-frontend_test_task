@@ -5,7 +5,7 @@ import ModalProductContent from "./ModalProductContent/ModalProductContent";
 
 const ModalProduct = ({hideModal, dataForModal}) => {
   return (
-    <div className={styles.modalProductCard}>
+    <div className={styles.modal_product_card}>
       <ExitButton hideModal={hideModal} />
       <ModalProductContent dataForModal={dataForModal} />
     </div>

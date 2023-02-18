@@ -1,14 +1,11 @@
+import TopTable from "./TopTable";
+import { requestProducts } from "../../stores/reducers/topTable-reducer";
 import { useEffect, useState } from "react";
 import { connect } from "react-redux";
-import Header from "../../common/TopTable/Header/Header";
-import Table from "../../common/TopTable/Table/Table";
-import { requestProducts } from "../../stores/reducers/topTable-reducer";
-import ModalWrapper from "../../features/TopTable/ModalWrapper/ModalWrapper";
 
 
 const html = document.querySelector("html");
 const body = document.querySelector("body");
-
 
 const TopTableContainer = ({topTable, requestProducts}) => {
 
@@ -19,11 +16,10 @@ const TopTableContainer = ({topTable, requestProducts}) => {
     requestProducts();
   }, []);
 
-  const openModal = (e) => {
+  const openModal = (nameProduct) => {
     setHide(false);
 
-    const idProduct = e.target.closest("button").id;
-    const productForModal = topTable.products.find(({id}) => id === idProduct);
+    const productForModal = topTable.products.find(({name}) => name === nameProduct);
     setDataForModal(productForModal);
       
     html.style.overflow = "hidden";
@@ -36,15 +32,10 @@ const TopTableContainer = ({topTable, requestProducts}) => {
     html.style.overflow = "visible";
     body.style.overflow = "visible";
   };
-  
- 
-  return (
-    <>
-      <Header />
-      <Table products={topTable.products} openModal={openModal} />
-      <ModalWrapper hide={hide} hideModal={hideModal} dataForModal={dataForModal} />
-    </>
-  )
+
+  return <TopTable topTable={topTable} hide={hide} 
+    dataForModal={dataForModal} openModal={openModal} 
+    hideModal={hideModal} />    
 };
 
 

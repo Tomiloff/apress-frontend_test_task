@@ -1,0 +1,20 @@
+.table_row:nth-child(2n) {
+  background-color: var(--lilac);
+}
+
+.table_cell {
+  width: 20%;
+  vertical-align: middle;
+  padding: 16px 0;
+  font-weight: bold;
+}
+
+
+/* Media queries */
+
+/* ========max-width: 800px ======== */
+@media only screen and (max-width: 800px) {
+  .table_row:nth-child(2n) {
+    background-color: var(--white);
+  }
+}

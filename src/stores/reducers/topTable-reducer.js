@@ -1,13 +1,13 @@
 import { productsAPI } from "../../services/api";
 
 
-const SET_PRODUCTS = "topTable/SET_PRODUCTS";
+const SET_PRODUCTS = "tableContainer/SET_PRODUCTS";
 
 const initialState = {
   products: []
 };
 
-const topTableReducer = (state = initialState, action) => {
+const tableContainerReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_PRODUCTS:
       return {
@@ -30,4 +30,4 @@ export const requestProducts = () => async (dispatch) => {
 }
 
 
-export default topTableReducer;
+export default tableContainerReducer;

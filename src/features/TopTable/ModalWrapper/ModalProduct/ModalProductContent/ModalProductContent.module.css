@@ -1,35 +1,27 @@
-.modalProductTitle {
+.modal_product_title,
+.modal_product_img,
+.modal_product_price,
+.modal_product_count {
   margin-bottom: 15px;
 }
 
-.modalImgWrapper {
-  max-width: 310px;
-  height: 219px;
-  margin-bottom: 15px;
-}
-
-.modalImg {
+.modal_product_img {
   width: 100%;
-  height: 100%;
+  height: 219px;
   object-fit: cover;
 }
 
-.modalProductPrice {
+.modal_product_price,
+.modal_product_count,
+.modal_product_link {
   font-weight: bold;
-  margin-bottom: 15px;
 }
 
-.modalProductDescription {
+.modal_product_description {
   margin-bottom: 12px;
   line-height: 17px;
 }
 
-.modalProductCount {
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.modalProductLink {
-  font-weight: bold;
+.modal_product_link {
   text-decoration-line: underline;
 }
