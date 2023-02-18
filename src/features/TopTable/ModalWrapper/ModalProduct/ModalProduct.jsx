@@ -1,5 +1,5 @@
 import styles from "./ModalProduct.module.css";
-import ExitButton from "../../../../components/TableContainer/Buttons/ModalBtn/ExitButton";
+import ExitButton from "../../../../components/TopTable/Buttons/ModalBtn/ExitButton";
 import ModalProductContent from "./ModalProductContent/ModalProductContent";
 
 

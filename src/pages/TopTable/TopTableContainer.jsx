@@ -1,16 +1,13 @@
+import TopTable from "./TopTable";
+import { requestProducts } from "../../stores/reducers/topTable-reducer";
 import { useEffect, useState } from "react";
 import { connect } from "react-redux";
-import Header from "../../common/TableContainer/Header/Header";
-import Table from "../../common/TableContainer/Table/Table";
-import { requestProducts } from "../../stores/reducers/tableContainer-reducer";
-import ModalWrapper from "../../features/TableContainer/ModalWrapper/ModalWrapper";
 
 
 const html = document.querySelector("html");
 const body = document.querySelector("body");
 
-
-const TableContainer = ({topTable, requestProducts}) => {
+const TopTableContainer = ({topTable, requestProducts}) => {
 
   const [hide, setHide] = useState(true);
   const [dataForModal, setDataForModal] = useState({});
@@ -35,15 +32,10 @@ const TableContainer = ({topTable, requestProducts}) => {
     html.style.overflow = "visible";
     body.style.overflow = "visible";
   };
-  
- 
-  return (
-    <>
-      <Header />
-      <Table products={topTable.products} openModal={openModal} />
-      <ModalWrapper hide={hide} hideModal={hideModal} dataForModal={dataForModal} />
-    </>
-  )
+
+  return <TopTable topTable={topTable} hide={hide} 
+    dataForModal={dataForModal} openModal={openModal} 
+    hideModal={hideModal} />    
 };
 
 
@@ -53,4 +45,4 @@ const mapStateToProps = (state) => {
   }
 };
 
-export default connect(mapStateToProps, {requestProducts}) (TableContainer);
+export default connect(mapStateToProps, {requestProducts}) (TopTableContainer);
