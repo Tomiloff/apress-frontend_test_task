@@ -20,6 +20,10 @@
 .modal_product_description {
   margin-bottom: 12px;
   line-height: 17px;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .modal_product_link {
