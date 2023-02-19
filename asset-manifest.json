@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apress-frontend_test_task/static/css/main.23e07ca5.css",
-    "main.js": "/apress-frontend_test_task/static/js/main.51384b52.js",
+    "main.js": "/apress-frontend_test_task/static/js/main.455c4ca4.js",
     "static/js/787.d0acb16e.chunk.js": "/apress-frontend_test_task/static/js/787.d0acb16e.chunk.js",
     "static/media/OpenSansLight.svg": "/apress-frontend_test_task/static/media/OpenSansLight.bad748acc558e595ef2d.svg",
     "static/media/OpenSansLight.eot": "/apress-frontend_test_task/static/media/OpenSansLight.3de599c4a5303d0d2994.eot",
@@ -13,11 +13,11 @@
     "index.html": "/apress-frontend_test_task/index.html",
     "static/media/cross.svg": "/apress-frontend_test_task/static/media/cross.c1209fd3532aaf116e8a.svg",
     "main.23e07ca5.css.map": "/apress-frontend_test_task/static/css/main.23e07ca5.css.map",
-    "main.51384b52.js.map": "/apress-frontend_test_task/static/js/main.51384b52.js.map",
+    "main.455c4ca4.js.map": "/apress-frontend_test_task/static/js/main.455c4ca4.js.map",
     "787.d0acb16e.chunk.js.map": "/apress-frontend_test_task/static/js/787.d0acb16e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23e07ca5.css",
-    "static/js/main.51384b52.js"
+    "static/js/main.455c4ca4.js"
   ]
 }
