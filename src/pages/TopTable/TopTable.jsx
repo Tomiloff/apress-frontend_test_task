@@ -3,12 +3,12 @@ import TableContainer from "../../common/TopTable/Table/TableContainer";
 import ModalWrapper from "../../features/TopTable/ModalWrapper/ModalWrapper";
 
 
-const TopTable = ({topTable, displayModal, dataForModal, openModal, hideModal}) => {
+const TopTable = ({displayModal, dataForModal, openModal, hideModal, setValueSearchInput, filtredProductsName}) => {
  
   return (
     <>
-      <Header />
-      <TableContainer products={topTable.products} openModal={openModal} />
+      <Header setValueSearchInput={setValueSearchInput} />
+      <TableContainer openModal={openModal} filtredProductsName={filtredProductsName} />
       <ModalWrapper displayModal={displayModal} hideModal={hideModal} dataForModal={dataForModal} />
     </>
   )
