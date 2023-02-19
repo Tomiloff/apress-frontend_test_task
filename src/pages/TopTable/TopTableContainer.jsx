@@ -9,7 +9,7 @@ const body = document.querySelector("body");
 
 const TopTableContainer = ({topTable, requestProducts}) => {
 
-  const [hide, setHide] = useState(true);
+  const [displayModal, setDisplayModal] = useState(true);
   const [dataForModal, setDataForModal] = useState({});
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const TopTableContainer = ({topTable, requestProducts}) => {
   }, []);
 
   const openModal = (nameProduct) => {
-    setHide(false);
+    setDisplayModal(false);
 
     const productForModal = topTable.products.find(({name}) => name === nameProduct);
     setDataForModal(productForModal);
@@ -27,13 +27,13 @@ const TopTableContainer = ({topTable, requestProducts}) => {
   };
 
   const hideModal = () => {
-    setHide(true);
+    setDisplayModal(true);
 
     html.style.overflow = "visible";
     body.style.overflow = "visible";
   };
 
-  return <TopTable topTable={topTable} hide={hide} 
+  return <TopTable topTable={topTable} displayModal={displayModal} 
     dataForModal={dataForModal} openModal={openModal} 
     hideModal={hideModal} />    
 };
