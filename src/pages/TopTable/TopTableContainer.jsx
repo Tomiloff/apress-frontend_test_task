@@ -9,6 +9,13 @@ const body = document.querySelector("body");
 
 const TopTableContainer = ({topTable, requestProducts}) => {
 
+  const [valueInput, setValueSearchInput] = useState("");
+
+  const filtredProductsName = topTable.products.filter(({name}) => {
+    return name.toLowerCase().includes(valueInput.toLowerCase());
+  });
+
+
   const [displayModal, setDisplayModal] = useState(true);
   const [dataForModal, setDataForModal] = useState({});
 
@@ -33,9 +40,11 @@ const TopTableContainer = ({topTable, requestProducts}) => {
     body.style.overflow = "visible";
   };
 
-  return <TopTable topTable={topTable} displayModal={displayModal} 
-    dataForModal={dataForModal} openModal={openModal} 
-    hideModal={hideModal} />    
+
+  return <TopTable  displayModal={displayModal} 
+                    dataForModal={dataForModal} openModal={openModal} 
+                    hideModal={hideModal} setValueSearchInput={setValueSearchInput} 
+                    filtredProductsName={filtredProductsName} />    
 };
 
 

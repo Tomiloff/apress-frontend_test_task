@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Table from "./Table";
 
 
-const TableContainer = ({products, openModal}) => {
+const TableContainer = ({openModal, filtredProductsName}) => {
 
   const [pageWidth, setPageWidth] = useState(window.innerWidth)
 
@@ -16,7 +16,7 @@ const TableContainer = ({products, openModal}) => {
     return () => window.removeEventListener('resize', handleResize);
   }, [pageWidth]);
 
-  return <Table pageWidth={pageWidth} products={products} openModal={openModal} />
+  return <Table pageWidth={pageWidth} openModal={openModal} filtredProductsName={filtredProductsName} />
 };
 
 export default TableContainer;

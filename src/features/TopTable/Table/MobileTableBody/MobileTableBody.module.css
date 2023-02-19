@@ -2,15 +2,14 @@
   width: 20%;
   vertical-align: middle;
   padding: 16px 0;
-}
-
-.mobile_table {
+  text-align: center;
   font-weight: bold;
 }
 
-.mobile_table tr:first-child {
+.mobile_table_row_title {
   background-color: var(--lilac);
 }
-.mobile_table tr:nth-child(n+2) {
+
+.mobile_table_row {
   border-bottom: 1px solid var(--light-gray);
 }
