@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apress-frontend_test_task/static/css/main.b649b4be.css",
-    "main.js": "/apress-frontend_test_task/static/js/main.5a4b13b3.js",
+    "main.js": "/apress-frontend_test_task/static/js/main.5f56b13f.js",
     "static/js/787.d0acb16e.chunk.js": "/apress-frontend_test_task/static/js/787.d0acb16e.chunk.js",
     "static/media/OpenSansLight.svg": "/apress-frontend_test_task/static/media/OpenSansLight.bad748acc558e595ef2d.svg",
     "static/media/OpenSansLight.eot": "/apress-frontend_test_task/static/media/OpenSansLight.3de599c4a5303d0d2994.eot",
@@ -13,11 +13,11 @@
     "index.html": "/apress-frontend_test_task/index.html",
     "static/media/cross.svg": "/apress-frontend_test_task/static/media/cross.c1209fd3532aaf116e8a.svg",
     "main.b649b4be.css.map": "/apress-frontend_test_task/static/css/main.b649b4be.css.map",
-    "main.5a4b13b3.js.map": "/apress-frontend_test_task/static/js/main.5a4b13b3.js.map",
+    "main.5f56b13f.js.map": "/apress-frontend_test_task/static/js/main.5f56b13f.js.map",
     "787.d0acb16e.chunk.js.map": "/apress-frontend_test_task/static/js/787.d0acb16e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b649b4be.css",
-    "static/js/main.5a4b13b3.js"
+    "static/js/main.5f56b13f.js"
   ]
 }
