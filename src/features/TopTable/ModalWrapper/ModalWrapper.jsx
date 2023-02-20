@@ -5,7 +5,7 @@ import ModalProduct from "./ModalProduct/ModalProduct";
 
 const ModalWrapper = ({displayModal, hideModal, dataForModal}) => {
   return (
-    <div className={classNames(displayModal ? styles.modal_wrapper_hide : styles.modal_wrapper)}>
+    <div onClick={e => e.currentTarget === e.target && hideModal()} className={classNames(displayModal ? styles.modal_wrapper_hide : styles.modal_wrapper)}>
       <ModalProduct hideModal={hideModal} dataForModal={dataForModal} />
     </div>
   )

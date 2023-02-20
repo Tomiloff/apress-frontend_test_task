@@ -9,10 +9,10 @@ const body = document.querySelector("body");
 
 const TopTableContainer = ({topTable, requestProducts}) => {
 
-  const [valueInput, setValueSearchInput] = useState("");
+  const [valueSearchInput, setValueSearchInput] = useState("");
 
   const filtredProductsName = topTable.products.filter(({name}) => {
-    return name.toLowerCase().includes(valueInput.toLowerCase());
+    return name.toLowerCase().includes(valueSearchInput.toLowerCase());
   });
 
 
